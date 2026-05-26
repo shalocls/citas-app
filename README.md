@@ -17,3 +17,12 @@ Aplicación móvil híbrida desarrollada con Ionic y Angular.
 
 ## Autor
 Carlos Echeverría
+
+## Capturas
+
+### Pantalla principal
+![Inicio](Screenshots/inicio.png)
+
+
+### Configuración
+![Configuración](Screenshots/configuracion.png)
