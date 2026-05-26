@@ -1,0 +1,21 @@
+<ion-item>
+  <ion-label position="stacked">Frase</ion-label>
+  <ion-input [(ngModel)]="frase"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="stacked">Autor</ion-label>
+  <ion-input [(ngModel)]="autor"></ion-input>
+</ion-item>
+
+<ion-button expand="block" (click)="agregarCita()">
+  Agregar cita
+</ion-button>
+
+<p *ngIf="frase && frase.length < 5" style="color:red">
+  La frase debe tener al menos 5 caracteres
+</p>
+
+<p *ngIf="autor && autor.length < 2" style="color:red">
+  El autor debe tener al menos 2 caracteres
+</p>

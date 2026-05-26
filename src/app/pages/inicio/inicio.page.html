@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cita aleatoria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <h2>Cita del día</h2>
+
+  <app-cita-card
+    [cita]="citaAleatoria"
+    [mostrarBotonEliminar]="permitirEliminar"
+    (eliminar)="eliminarCita($event)">
+  </app-cita-card>
+
+  <ion-button expand="block" (click)="cargarCita()">
+    Nueva cita aleatoria
+  </ion-button>
+
+  <ion-button expand="block" routerLink="/gestion-citas">
+    Gestionar citas
+  </ion-button>
+
+  <ion-button expand="block" routerLink="/configuracion">
+    Configuración
+  </ion-button>
+
+</ion-content>

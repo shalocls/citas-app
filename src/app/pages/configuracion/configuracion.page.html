@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Configuración</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <h2>Configuración de la aplicación</h2>
+
+  <ion-item>
+    <ion-label>Permitir eliminar citas en inicio</ion-label>
+    <ion-checkbox [(ngModel)]="permitirEliminar"></ion-checkbox>
+  </ion-item>
+
+  <ion-button expand="block" (click)="guardar()">
+    Guardar configuración
+  </ion-button>
+
+  <ion-button expand="block" routerLink="/inicio">
+    Volver al inicio
+  </ion-button>
+
+  <ion-button expand="block" routerLink="/gestion-citas">
+    Gestionar citas
+  </ion-button>
+
+</ion-content>

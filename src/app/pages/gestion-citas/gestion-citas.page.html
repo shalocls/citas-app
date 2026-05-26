@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Gestión de citas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <h2>Agregar nueva cita</h2>
+
+  <app-cita-form (agregar)="agregarCita($event)"></app-cita-form>
+
+  <h2>Listado de citas</h2>
+
+  <app-cita-card
+    *ngFor="let cita of citas"
+    [cita]="cita"
+    [mostrarBotonEliminar]="true"
+    (eliminar)="eliminarCita($event)">
+  </app-cita-card>
+
+  <ion-button expand="block" routerLink="/inicio">
+    Volver al inicio
+  </ion-button>
+
+  <ion-button expand="block" routerLink="/configuracion">
+    Ir a configuración
+  </ion-button>
+
+</ion-content>
